@@ -10,6 +10,10 @@ angular.module('app').factory('meanNotifier', function (meanToastr) {
 		notify: function (msg) {
 			console.log(msg);
 			meanToastr.success(msg);
+		},
+		error: function (msg) {
+			meanToastr.error(msg);
+			console.log(msg);
 		}
 	}
 });

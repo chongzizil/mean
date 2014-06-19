@@ -3,6 +3,9 @@
 
 .navbar-right(ng-controller="meanNavBarLoginCtrl")
     form.navbar-form(ng-hide="identity.isAuthenticated()")
+        ul.nav.navbar-nav
+            li
+                a(href="/signup") Sign up
         .form-group
             input.form-control(placeholder="Email", ng-model="username")
         .form-group
@@ -16,5 +19,7 @@
             ul.dropdown-menu
                 li(ng-show="identity.currentUser.isAdmin()")
                     a(href="/admin/users") User Admin
+                li
+                    a(href="/profile") Profile
                 li
                     a(href="", ng-click="signout()") Sign Out
