@@ -1,7 +1,7 @@
 /**
  * Created by Zil on 6/16/14.
  */
-angular.module('app').controller('mvMainCtrl', function ($scope) {
+angular.module('app').controller('meanMainCtrl', function ($scope) {
 	$scope.courses = [
 		{name: 'C# for Sociopaths', featured: true, published: new Date('10/5/2013')},
 		{name: 'C# for Non-Sociopaths', featured: true, published: new Date('10/12/2013')},
